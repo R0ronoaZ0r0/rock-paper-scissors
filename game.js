@@ -36,6 +36,11 @@ for(let i = 0; i < 10; i++){
         i--;
         continue;
     }
+
+    if(playerSelection === null){
+        console.log('Game exited!');
+        break;
+    }
     let computerSelection = getComputerChoice();
     console.log(playRound(playerSelection, computerSelection));
 }
